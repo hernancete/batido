@@ -1,0 +1,8 @@
+
+Querido/a [%PLAYER%]:
+
+Tu amaigo/a invisible/a para este año es:
+
+ ¡ ¡ ¡ ¡ ¡ [%AMAIGO%] ! ! ! ! !
+
+A pensar rapidito que no queda mucho tiempo!!!

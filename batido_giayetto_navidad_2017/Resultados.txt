@@ -1,0 +1,17 @@
+      Oscar (Vejete) -----> Silvia (Mamola)
+     Silvia (Mamola) -----> Esteban
+            Santiago -----> Hilda
+     Stefani (Stefi) -----> Maria Jose (Tati)
+              Hernan -----> Jorgelina
+   Maria Jose (Tati) -----> Agustin
+         Maria Elisa -----> Hernan
+     Martin (Tincho) -----> Ana Cecilia
+         Ana Cecilia -----> Martin (Tincho)
+               Diego -----> Santiago
+           Jorgelina -----> Diego
+            Leonardo -----> Pilar
+               Pilar -----> Elvira
+             Agustin -----> Stefani (Stefi)
+               Hilda -----> Maria Elisa
+             Esteban -----> Oscar (Vejete)
+              Elvira -----> Leonardo
