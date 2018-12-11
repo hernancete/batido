@@ -1,0 +1,7 @@
+Resultados del Batido.
+
+Jugadores: {players}
+Evento: {event}
+Año: {year}
+Restricción: {years_ago} años
+
