@@ -40,21 +40,21 @@ args = parser.parse_args()
 
 
 def meet_restrictions(results, restrictions, restrict_myself=True):
-  # print "meet_restrictions({}, {}, {})".format(results, restrictions, restrict_myself)
+  # print("meet_restrictions({}, {}, {})".format(results, restrictions, restrict_myself))
   for f in results:
     t = results[f]
     if restrict_myself and f == t:
-      print "{} cannot give a present to himself/herself".format(f)
+      print("{} cannot give a present to himself/herself".format(f))
       return False
     if t in restrictions[f]:
-      print "{} cannot give a present to {}".format(f, t)
+      print("{} cannot give a present to {}".format(f, t))
       return False
   return True
 
 
 def print_results(results):
   for r in results:
-    print "{}\t->\t{}".format(str(player_names[r]), str(player_names[results[r]]))
+    print("{}\t->\t{}".format(str(player_names[r]), str(player_names[results[r]])))
 
 
 def write_results(results, directory):
@@ -76,7 +76,7 @@ def write_results(results, directory):
         for r in results:
           result_file = os.path.join(directory,
                                      RESULT_FILE_TEMPL.format(player=player_names[r]))
-          print "Writting result for {} on {}".format(player_names[r], result_file)
+          print("Writting result for {} on {}".format(player_names[r], result_file))
 
           results_file_h.write("{} -> {}\n".format(player_names[r], player_names[results[r]]))
 
@@ -85,9 +85,9 @@ def write_results(results, directory):
 
 
 if args.test:
-  print "Esto es una prueba!"
+  print("Esto es una prueba!")
 else:
-  print "Esto NO es una prueba!!! es de verdad!!"
+  print("Esto NO es una prueba!!! es de verdad!!")
 
 # get players from google
 players = get_players(args.players, args.event, args.year)
@@ -100,7 +100,7 @@ last_results = get_players_last_results(args.players, args.event, args.year, arg
 # hacer el batido
 batido_amigo = {}
 for i in range(1, MAX_ATTEMPTS):
-  print "Attempt {}/{}".format(i, MAX_ATTEMPTS)
+  print("Attempt {}/{}".format(i, MAX_ATTEMPTS))
   batido = sample(players, len(players))
   results_candidate = {k:batido[i] for i,k in enumerate(players)}
 
@@ -120,5 +120,5 @@ if batido_amigo:
     if not os.path.exists(out_directory):
       os.mkdir(out_directory)
 
-    print "Writting results on {}".format(out_directory)
+    print("Writting results on {}".format(out_directory))
     write_results(batido_amigo, out_directory)

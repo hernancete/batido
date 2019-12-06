@@ -17,7 +17,7 @@ spread = client.open("Batido")
 
 
 def get_players(players_name, event, year):
-  # print "get_players({}, {}, {})".format(players_name, event, year)
+  # print("get_players({}, {}, {})".format(players_name, event, year))
   sheet = spread.worksheet("players-{}-{}".format(event, players_name))
   all_records = sheet.get_all_records()
   year_row = filter(lambda r : _get_row_by_year(r, year), all_records)[0]
@@ -26,14 +26,14 @@ def get_players(players_name, event, year):
 
 
 def get_player_names(players_name, players):
-  # print "get_player_names({}, {})".format(players_name, players)
+  # print("get_player_names({}, {})".format(players_name, players))
   sheet = spread.worksheet("{}".format(players_name))
   all_records = sheet.get_all_records()
   return {k['id']:k['name'] for k in all_records if k['id'] in players}
 
 
 def get_players_last_results(players_name, event, year, years_ago):
-  # print "get_players_last_results({}, {}, {}, {})".format(players_name, event, year, years_ago)
+  # print("get_players_last_results({}, {}, {}, {})".format(players_name, event, year, years_ago))
   sheet = spread.worksheet("resultados-{}-{}".format(event, players_name))
   all_records = sheet.get_all_records()
 
