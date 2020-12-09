@@ -1,0 +1,22 @@
+Resultados del Batido.
+
+Jugadores: giayetto
+Evento: navidad
+Año: 2019
+Restricción: 4 años
+
+Diego -> Agustin
+Jorgelina -> Stefi
+Tati -> Silvia
+Santiago -> Jorgelina
+Hernan -> Hilda
+Silvia -> Elvira
+Stefi -> Diego
+Elvira -> Hernan
+Hilda -> Santiago
+Pilar -> Leonardo
+Oscar -> Tati
+Ana -> Oscar
+Maria -> Pilar
+Leonardo -> Ana
+Agustin -> Maria

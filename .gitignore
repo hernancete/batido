@@ -2,3 +2,4 @@ extras
 *pyc
 client_secret.json
 Pipfile.lock
+.vscode

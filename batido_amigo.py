@@ -54,7 +54,7 @@ def meet_restrictions(results, restrictions, restrict_myself=True):
 
 def print_results(results):
   for r in results:
-    print("{}\t->\t{}".format(str(player_names[r]), str(player_names[results[r]])))
+    print("{} -> {}".format(str(player_names[r]).rjust(10, ' '), str(player_names[results[r]]).ljust(10, ' ')))
 
 
 def write_results(results, directory):
