@@ -1,0 +1,18 @@
+Resultados del Batido.
+
+Jugadores: frutos
+Evento: navidad
+Año: 2020
+Restricción: 3 años
+
+Belen -> Chaco
+Tati -> Guille
+Chaco -> Belen
+Hernan -> Pepe
+Juan -> Hernan
+Pepe -> Mica
+Mariana -> Juan
+Nati -> Chino
+Guille -> Nati
+Chino -> Tati
+Mica -> Mariana
