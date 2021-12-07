@@ -3,3 +3,4 @@ extras
 client_secret.json
 Pipfile.lock
 .vscode
+.cache
